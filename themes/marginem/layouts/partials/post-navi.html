@@ -1,0 +1,31 @@
+                <!-- Prev / Next Post -->
+                <nav class="entry-navigation" style="padding-top:0px;padding-bottom:30px;">
+                {{- if and (not (eq .Params.single true)) (or .PrevInSection .NextInSection) -}}
+                  <div class="row">
+                  	{{- with .NextInSection -}}
+                    <div class="col-lg-6">
+                      <a href="{{ .Permalink }}" class="entry-navigation__url entry-navigation--left">
+                        <img src="{{ .Params.thumbnail }}" width="147" height="auto" alt="{{ .Title | safeHTML }}" class="entry-navigation__img">
+                        <div class="entry-navigation__body">
+                          <i class="ui-arrow-left"></i>
+                          <span class="entry-navigation__label">Previous Post</span>
+                          <h6 class="entry-navigation__title">{{ .Title | safeHTML }}</h6>
+                        </div>
+                      </a>
+                    </div>
+                    {{- end -}}
+                    {{- with .PrevInSection -}}
+                    <div class="col-lg-6">
+                      <a href="{{ .Permalink }}" class="entry-navigation__url entry-navigation--right">
+                        <div class="entry-navigation__body">
+                          <span class="entry-navigation__label">Next Post</span>
+                          <i class="ui-arrow-right"></i>
+                          <h6 class="entry-navigation__title">{{ .Title | safeHTML }}</h6>
+                        </div>
+                        <img src="{{ .Params.thumbnail }}" width="147" height="auto" alt="{{ .Title | safeHTML }}" class="entry-navigation__img">
+                      </a>
+                    </div>
+                    {{- end -}}
+                  </div>
+                  {{- end -}}
+                </nav>

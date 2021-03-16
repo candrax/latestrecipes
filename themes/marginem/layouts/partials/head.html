@@ -1,0 +1,38 @@
+  {{- with.Params.description }}
+  <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}">
+  {{- end }}
+  <meta name="url" content="{{ .Permalink }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="arrsae" content="ads/auto.txt">
+  {{- with.Params.author }}
+  <meta name="author" content="{{ humanize . }}">
+  {{- end }}
+  <!-- speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://img-global.cpcdn.com">
+  <link rel="preconnect" href="https://img-global.cpcdn.com">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relLangURL | absURL }}" />
+  <link rel="stylesheet" href="{{ "/css/font-icons.css" | relLangURL | absURL }}" />
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" /> -->
+  <link rel="stylesheet" href="{{ "/css/style.css" | relLangURL | absURL }}" />
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ "/img/favicon.ico" | relLangURL | absURL }}">
+  <link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | relLangURL | absURL }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/apple-touch-icon-72x72.png" | relLangURL | absURL }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/apple-touch-icon-114x114.png" | relLangURL | absURL }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | absURL}}">
+  {{- with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
+  {{- end }}
+  <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+  <style>
+    ol li {list-style: decimal;}.toc {border:1px solid #ccc; padding:10px 13px; margin-bottom:10px; display:table; line-height:1.6em;}.toc b {display:inline-block; margin-right:10px}.toc a {text-decoration:none}.toc a:hover {text-decoration:underline}.toc ul {list-style-type:none; list-style-image:none; margin:0px; padding-left:2em; text-align:left}.toc ul li {list-style-type:circle;}.toc ul li a {margin-left:.5em}.toc ul li ul {margin-left:2em}.toctogglelabel {cursor:pointer; color:#0645ad} :not(:checked) > .toctoggle {display:inline !important; position:absolute;  opacity:0} :not(:checked) > .toctogglespan:before {content:'['} .toctoggle:checked + .toctitle .toctogglelabel:after {content:'show';display: inline}.toctoggle:not(:checked) + .toctitle .toctogglelabel:after {content:'hide'} :not(:checked) > .toctogglespan:after {content:']'}.toctoggle:checked ~ ul{display:none}:target::before {content:''; display:block; height:0px; margin-top:0px; visibility:hidden}
+  </style>

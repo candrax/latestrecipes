@@ -1,0 +1,7 @@
+{{- define "title" }}
+  <title>{{- if gt .Paginator.PageNumber 1 }}Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }} - {{- end }} {{ .Title }}</title>
+  <meta name="description" content="{{- if gt .Paginator.PageNumber 1 }}Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }},{{- end }} {{ .Site.Params.description }}">
+{{- end }}
+{{- define "main" }}
+{{- partial "index-post.html" . }}
+{{- end }}

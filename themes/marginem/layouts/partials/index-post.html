@@ -1,0 +1,55 @@
+      <section class="text-center">
+        <div class="container">
+          <div class="page-title__holder">
+            <h1 class="page-title__title">{{- if .IsNode }}{{- if gt .Paginator.PageNumber 1 }}Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }} - {{- end }}{{- end }} {{ .Site.Title }}</h1>
+            {{- partial "ads-banner-top.html" . }}
+          </div>
+        </div>
+      </section>
+      <!-- Blog -->
+      <section class="section-wrap bottom-divider">
+        <div class="container">
+          <div class="row card-row">
+
+          	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+            {{ range $paginator.Pages }}
+            <div class="col-lg-4">
+              <article class="entry card box-shadow hover-up">
+                <div class="entry__img-holder card__img-holder">
+                  <a href="{{ .Permalink }}">
+                    <img src="{{ .Params.thumbnail }}" class="entry__img" alt="{{ .LinkTitle }}">
+                  </a>
+                  <div class="entry__date">
+                    <span class="entry__date-day">{{ .PublishDate.Format "2" | safeHTML }}</span>
+                    <span class="entry__date-month">{{ .PublishDate.Format "January" | safeHTML }}</span>
+                  </div>
+                  <div class="entry__body card__body">                    
+                    <h4 class="entry__title">
+                      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                    </h4>
+                    <ul class="entry__meta">
+                      {{- range .Params.categories }}
+                      <li class="entry__meta-category">
+                        <i class="ui-category"></i>
+                        <a href="{{ "/categories/" | relLangURL | absURL }}{{ . | urlize }}/">{{ . }}</a>
+                      </li>
+                      {{- end }}
+                      <li class="entry__meta-star-empty">
+                        <i class="ui-star-empty"></i>
+                        {{- .Params.author }}
+                      </li>
+                    </ul>              
+                    <div class="entry__excerpt">
+                      <p>{{- .Summary }}</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            {{- end }}
+
+          </div>
+          <!-- Pagination -->
+          {{- partial "navi.html" . }}
+        </div>
+      </section> <!-- end blog -->

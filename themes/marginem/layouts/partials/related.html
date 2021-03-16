@@ -1,0 +1,51 @@
+                <section class="related-posts">
+                  <h5 class="mb-24">Related by Categori/date</h5>
+                  <div class="row row-16 card-row">
+                  	{{- $related := .Site.RegularPages.RelatedIndices . "categories" "date" | shuffle | first 3 }}
+                  	{{- with $related }}
+                  	{{- range . }}
+                    <div class="col-lg-4">
+                      <article class="entry card card--small box-shadow hover-up">
+                        <div class="entry__img-holder card__img-holder">
+                          <a href="{{ .Permalink }}">
+                            <img src="{{ .Site.Params.hold | absURL }}" data-src="{{ .Params.thumbnail }}" class="entry__img" alt="{{ .LinkTitle }}">
+                          </a>
+                          <div class="entry__body card__body">
+                            <h4 class="entry__title">
+                              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                            </h4>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    {{- end }}
+                    {{- end }}
+                  </div>
+                </section>
+
+                {{- partial "ads-related.html" . }}
+
+                <section class="related-posts">
+                  <h5 class="mb-24">Related by Tags</h5>
+                  <div class="row row-16 card-row">
+                  	{{- $related := .Site.RegularPages.RelatedIndices . "tags" | shuffle | first 3 }}
+                  	{{- with $related }}
+                  	{{- range . }}
+                    <div class="col-lg-4">
+                      <article class="entry card card--small box-shadow hover-up">
+                        <div class="entry__img-holder card__img-holder">
+                          <a href="{{ .Permalink }}">
+                            <img src="{{ .Site.Params.hold | absURL }}" data-src="{{ .Params.thumbnail }}" class="entry__img" alt="{{ .LinkTitle }}">
+                          </a>
+                          <div class="entry__body card__body">
+                            <h4 class="entry__title">
+                              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                            </h4>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    {{- end }}
+                    {{- end }}
+                  </div>
+                </section>

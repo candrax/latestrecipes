@@ -1,0 +1,144 @@
+---
+title: "Recipe Appetizing Ginisang Munggo with Chicharon"
+date: 2020-03-13 15:48:13
+categories:
+    - Trend Recipes
+    
+tags:
+    - Easy recipes
+
+image: https://img-global.cpcdn.com/recipes/459790ab5ca71b4a/680x482cq70/ginisang-munggo-with-chicharon-recipe-main-photo.jpg
+thumbnail: https://img-global.cpcdn.com/recipes/459790ab5ca71b4a/350x250cq70/ginisang-munggo-with-chicharon-recipe-main-photo.jpg
+description: How to Cook Appetizing Ginisang Munggo with Chicharon with 10 ingredients and 8 stages of easy cooking.
+author: Alex Copeland
+calories: 170 calories
+fatContent: 12 grams fat
+preptime: PT38M
+cooktime: PT2H
+ratingvalue: 3.2
+reviewcount: 1612
+recipeingredient: ["munggo mung beans", "water", "pork sliced into thin small pieces", "garlic", "medium onion", "tomatoes sliced", "fermented fish", "ampalaya bittermelon leaves", "chicharon", "Salt"]
+
+recipeinstructions: 
+      - Rinse munggomung beans in cold running water until water runs clear Drain well 
+      - Soak the munggomung beans in about 2 cups water for 4 hoursBring the same water to the boil and simmer beans until tender and most of the water has been absorbed about 20 to 30 mins 
+      - Mash the beans with the back of the spoon until softened Set aside 
+      - Heat oil in a casserole and saute onion garlic and tomatoes until soft and aromatic Add diced pork and saute until brownStir in cooked munggomung beans and 2 cups fresh water Bring to boil and simmer over medium heat until pork is fully cooked add more water if necessary 
+      - Add fermented fish and continue to cook for about 1 to 2 minutes 
+      - Add chicharon and continue to cook until softened Season with salt to taste 
+      - Add ampalaya leaves and cook for 2 minutes 
+      - Transfer to a serving bowl Top with chicharonServe Share and enjoy
+
+---
+
+
+
+**Without fail recipe ultimate Ginisang Munggo with Chicharon easy, delicious, practical**. Ginisang Munggo(sauteed mung beans soup) is very simple and easy to prepare, one of the very best to cook while stay at home, today I. Welcome to our channelEnjoy watching and pls do subscribe to our channel and hit the notification bell to get latest update on our. Easy Ginisang Monggo with Chicharon A popular Filipino dish made with sauteed mung beans. It is usually served every Fridays, I don&#39;t know whats the reason. TIP: Monggo is best topped with chicharon and paired with any fried dish like fish or liempo.
+
+
+![Ginisang Munggo with Chicharon](https://img-global.cpcdn.com/recipes/459790ab5ca71b4a/680x482cq70/ginisang-munggo-with-chicharon-recipe-main-photo.jpg "Ginisang Munggo with Chicharon")
+
+
+
+Ginisang Munggo or Monggo are sauteed mung beans.
+
+This recipe also makes use of pork and shrimp for additional flavor.
+
+Munggo or Mung bean (or even green bean to some) is a seed of Vigna radiata, a plant native to India and Pakistan.
+
+
+Great Morning all, now you can make dish Ginisang Munggo with Chicharon with 10 ingredients and 8 actions. Below this is how to cook, please thoroughly meticulously.
+
+In food preparation there are some stages that need to be done, starting to prepare components, food preparation devices, as well as additionally understand how to begin with starting to food preparation prepares to be offered and also appreciated. Make certain you has adequate time as well as no is considering another thing, because will certainly create the food to burn, taste not ideal wanted, and also numerous others. Immediately, below are 10 components and 8 phases of easy food preparation Ginisang Munggo with Chicharon.
+{{< adstxt />}}
+
+### Ingredients all Ginisang Munggo with Chicharon
+
+
+1. Needed  : munggo (mung beans).
+
+1. Needed  : water.
+
+1. Needed  : pork sliced into thin small pieces.
+
+1. Needed  : garlic.
+
+1. Needed  : medium onion.
+
+1. Needed  : tomatoes, sliced.
+
+1. Prepare  : fermented fish.
+
+1. Needed  : ampalaya (bittermelon), leaves.
+
+1. Needed  : chicharon.
+
+1. Prepare  : Salt.
+
+
+Ginisang munggo is a Filipino savory mung bean soup.
+
+It is made with mung beans, garlic, tomatoes, onions, various vegetables, and patis (fish sauce).
+
+It is cooked with pork, tinapa (smoked fish), daing (dried fish), or other seafood and meat.
+
+Pork monggo is not your typical ginisang monggo dish because it was prepared differently.
+
+
+If all ingredients Ginisang Munggo with Chicharon its all set| prepares}, We are entering into the cooking stage. Below is exactly how to preparing with simple.
+
+### Step by Step Cooking Ginisang Munggo with Chicharon
+
+{{< adstxt />}}
+
+
+1. Rinse munggo(mung beans) in cold, running water until water runs clear. Drain well..
+
+
+
+1. Soak the munggo(mung beans) in about 2 cups water for 4 hours.
+Bring the same water to the boil and simmer beans until tender and most of the water has been absorbed, about 20 to 30 mins..
+
+
+
+1. Mash the beans with the back of the spoon, until softened. Set aside..
+
+
+
+1. Heat oil in a casserole and saute onion, garlic and tomatoes until soft and aromatic. Add diced pork and saute until brown.
+Stir in cooked munggo(mung beans) and 2 cups fresh water. Bring to boil and simmer over medium heat until pork is fully cooked (add more water if necessary)..
+
+
+
+1. Add fermented fish and continue to cook for about 1 to 2 minutes..
+
+
+
+1. Add chicharon and continue to cook until softened. Season with salt to taste..
+
+
+
+1. Add ampalaya leaves and cook for 2 minutes.
+
+
+
+1. Transfer to a serving bowl. Top with chicharon.
+Serve. Share and enjoy!.
+
+
+
+
+You just need to wash the beans after removing The taste of the pork stands out, while the addition of chicharon bits on top is a bonus that adds texture to the dish.
+
+Ginisang Monggo At Chicharon Sauteed Mung Beans And Pork Crakling.
+
+Ginisang Munggo at Chicharon There are certain dishes that take me back to when I was a kid and this recipe is one of them.
+
+It&#39;s a simple stew consisting of mung beans, a small green bean native to India Ginisang Munggo at Chicharon is a delicious mung bean stew flavored with pork cracklings.
+
+Ginisang Munggo is such a staple in our household because it&#39;s just one of my favorite ulam EVER!
+
+
+{{< adslink />}}
+
+Like that formula easy make with set dishes Ginisang Munggo with Chicharon, you also do seek even more dishes food other fascinating on site us, available countless different recipes globe food as well as we will remain to add and also establish. Beginning with food healthy and balanced very easy, tasty, and also healthy to food fatty, hard, spicy, pleasant, salted acid gets on our web page. Thanks for reviewing the best recipe Ginisang Munggo with Chicharon.

@@ -1,0 +1,43 @@
+{{- define "title" }}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+{{- end }}
+{{- define "main" }}
+      <section class="text-center">
+        <div class="container">
+          <div class="page-title__holder">
+            <h1 class="page-title__title">{{ .Title }}</h1>
+            {{- partial "ads-banner-top.html" . }}
+          </div>
+        </div>
+      </section>
+      <!-- Single Post -->
+      <section class="section-wrap pt-40 pb-48">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="blog__content">
+                <article class="entry mb-0">
+                  <div class="entry__article-wrap">
+
+                    <div class="entry__article">
+                    <!-- TOC -->
+                    <div class="toc">
+                      <input type="checkbox" role="button" id="toctoggle" class="toctoggle">
+                      <div class="toctitle"><b>Table of content</b><span class="toctogglespan"><label class="toctogglelabel" for="toctoggle"></label></span></div>
+                      <ul>
+                        {{- .TableOfContents | replaceRE "<nav([^>]*)>\\s*<ul>\\s*<li>([\\s\\S]+)</li>\\s*</ul>\\s*</nav>" "<li>$2</li>" | safeHTML }}
+                      </ul>
+                    </div> <!-- end TOC -->
+                    {{- .Content }}
+                    </div> <!-- end entry article -->
+                  </div> <!-- end entry article wrap -->
+                </article>
+                {{- partial "ads-bottom-post.html" . }}
+                {{- partial "post-navi.html" . }}
+                {{- partial "related.html" . }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- end single post --> 
+{{- end }}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  {{- partial "arsae.html" . }}
+  {{- block "title" . }}{{- end }}
+  {{- partial "head.html" . }}
+  {{- if .IsPage }}
+  {{- partial "json-ld.html" . }}
+  {{- end }}
+</head>
+<body class="blog">
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      "Loading..."
+    </div>
+  </div>
+  <main class="main-wrapper">
+    {{- partial "header.html" . }}
+    <div class="content-wrapper oh">
+      {{- block "main" . }}{{- end }}
+      {{- partial "footer.html" . }}
+    </div>
+  </main>
+  <!-- jQuery Scripts -->
+  <script src="{{ "/js/jquery.min.js" | relLangURL | absURL }}"></script>
+  <script src="{{ "/js/bootstrap.min.js" | relLangURL | absURL }}"></script>
+  <script src="{{ "/js/plugins.js" | relLangURL | absURL }}"></script>
+  <script src="{{ "/js/scripts.js" | relLangURL | absURL }}"></script>
+  <!-- Cookies -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script src="/js/cookies.js"></script> -->
+  <!-- <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script> -->
+<!-- lazy img defer -->
+  <script>
+function init() {
+var imgDefer = document.getElementsByTagName('img');
+for (var i=0; i<imgDefer.length; i++) {
+if(imgDefer[i].getAttribute('data-src')) {
+imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
+</script>
+</body>
+</html>

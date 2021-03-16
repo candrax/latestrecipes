@@ -1,0 +1,81 @@
+title = "Unique Latest Recipes"
+baseurl = "https://latestrecipes.vercel.app/"
+MetaDataFormat = "yaml"
+themesDir = "themes"
+theme = "marginem"
+enableRobotsTXT = true
+summaryLength = 20
+rssLimit = 10
+paginate = 9
+
+# mainSections = ["post"]
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML", "RSS"]
+    section = ["HTML"]
+    taxonomyTerm = ["HTML"]
+    taxonomy = ["HTML", "RSS"]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
+
+[Params]
+   hold = "/img/placeholder.svg"
+   title = "Unique Latest Recipes"
+   description = "Easy recipes, healthy cuisine nutritious, new healthy and delicious dishes, easy to try at home"
+
+[permalinks]
+  "post" = "/:filename/"
+
+# disableKinds = ["taxonomy", "taxonomyTerm"]
+[Taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+    autoHeadingIDType = "github"
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 3
+  [markup.goldmark.renderer]
+    unsafe = true # Allow HTML in md files
+    enableInlineShortcodes = true
+
+# Biodata Author
+[author]
+    name = "Webmaster"
+    homepage = "/"
+    bio = "woles wae"
+    image = "/img/logo.svg"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[minify]
+    [minify.tdewolff.html]
+      keepQuotes = true

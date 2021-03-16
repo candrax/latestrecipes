@@ -1,0 +1,78 @@
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement":
+  [
+   {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "{{ .Site.BaseURL }}"
+   },
+   {
+   "@type": "ListItem",
+   "position": 2,
+   {{- range .Params.categories }}
+   "name": "{{ . | safeJS }}",
+   "item": "{{ "/categories/" | relLangURL | absURL }}{{ . | urlize }}\/"
+   {{- end }}
+   },
+   {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "{{ .Title | safeJS }}",
+   "item": "{{ .Permalink }}"
+   }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "{{ .Title }}",
+  "image": "[{{ .Params.image }}]",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+  "description": "{{ .Params.description }}",
+  "keywords": "{{ substr .Title 0 30 }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author }}"
+  },
+  "nutrition": {
+     "@type": "NutritionInformation",
+     "calories": "{{ .Params.calories }}",
+     "fatContent": "{{ .Params.fatcontent }}"
+  },
+  "recipeCuisine": "World",
+  "recipeCategory": {{ range $index, $categories := .Params.categories }}{{ if $index }}, {{ end }}"{{ $categories }}"{{ end }},
+  "recipeYield": "1",
+  "prepTime": "{{ .Params.preptime }}",
+  "cookTime": "{{ .Params.cooktime }}",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ .Params.ratingvalue }}",
+    "reviewCount": "{{ .Params.reviewcount }}"
+  },
+  "recipeIngredient": {{ .Params.recipeingredient }},
+
+  "recipeInstructions": [
+  {{- range $name := .Params.recipeinstructions }}
+  {{- with (printf $name) }}
+  {
+  "@type": "HowToStep",
+  "text": {{ $name }},
+  "name": {{ substr $name 0 10 }}
+  },
+  {{- end }}
+  {{- end }}
+  {
+  "@type": "HowToStep",
+  "text": "Finish and enjoy",
+  "name": "Finish"
+  }
+  ]
+}
+</script>
